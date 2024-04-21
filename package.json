@@ -3,9 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://<username>.github.io/<repository-name>",
+  "homepage": "https://Arundath2001.github.io/note",
   "scripts": {
-    "deploy": "gh-pages -d dist -r https://github.com/Arundath2001/Keeper.git",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist",
     "init": "npm install",
     "dev": "vite",
     "build": "vite build",
